@@ -1,0 +1,10 @@
+funcionamiento
+
+deberia haber un especie de foreach que recorra el grafico por cada punto para ver si hay una frecuencia sonanado, 
+en caso de haberla, se transcribiria la nota correspondiente a MIDI y en caso de no haber ninguna frecuencia, no se 
+transcribe nada. 
+
+
+traduccion
+
+las galerias de MIDI de python deberian recibir un mensaje de la "IA" y crear una nota de audio
