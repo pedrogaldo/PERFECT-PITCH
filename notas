@@ -7,4 +7,9 @@ transcribe nada.
 
 traduccion
 
-las galerias de MIDI de python deberian recibir un mensaje de la "IA" y crear una nota de audio
+la IA debe enviarle un mensaje a una galeria de MIDI con el nombre de la nota y la duracion para que cree una nota
+
+
+
+Al momento de subir un archivo de audio mp3, la I.A debe traducirlo a MIDI y guardarlo con el mismo nombre que el archivo mp3 pero con formato MIDI.
+
