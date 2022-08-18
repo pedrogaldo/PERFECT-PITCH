@@ -1,15 +1,21 @@
 funcionamiento
 
-deberia haber un especie de foreach que recorra el grafico por cada punto para ver si hay una frecuencia sonanado, 
-en caso de haberla, se transcribiria la nota correspondiente a MIDI y en caso de no haber ninguna frecuencia, no se 
-transcribe nada. 
+El funcionamiento va a ser mas complejo. Primero que nada hay que identificar las 
+frecuencias usando una transformada llamada CQT (Constant Q Transform) la cual está
+muy relacionada con la transformada de Fourier. Luego, hay que hacer "onset detection"
+que consiste en identificar en que momento suena una frecuencia. despues, hay que
+realizar un par de funciones mas para eliminar los armonicos, estimar la frecuencia a
+notas musicales, convertir esas notas en ondas senoidales y luego a MIDI, estimar el
+tempo de el audio etc... Hay algunas librerias que permiten realizar un pentagrama con 
+python. Tambien, si nos da el tiempo podriamos terminar por cuantizar las notas de 
+MIDI usando codigo.
+
+Es importante que primero se traduzcan las frecuencias a notas musicales antes que a
+ondas porque de esa forma, las ondas senoidales van a tener la frecuencia exacta y
+no va a haber un problema con que tan afinada esté la nota.
 
 
-traduccion
 
-la IA debe enviarle un mensaje a una galeria de MIDI con el nombre de la nota y la duracion para que cree una nota
-
-
-
-Al momento de subir un archivo de audio mp3, la I.A debe traducirlo a MIDI y guardarlo con el mismo nombre que el archivo mp3 pero con formato MIDI.
+Al momento de subir un archivo de audio mp3, la "I.A" debe traducirlo a 
+MIDI y guardarlo con el mismo nombre que el archivo mp3 pero con formato MIDI.
 
