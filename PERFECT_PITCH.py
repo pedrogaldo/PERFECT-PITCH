@@ -53,6 +53,9 @@ plt.figure(figsize=(10, 5))
 librosa.display.waveplot(x, sr=sr)
 plt.vlines(onset_segs, -0.15, 0.15, color='r', alpha=0.7) 
 
+#grafico de el chromagrama
 
-
+chromagram = librosa.feature.chroma_stft(x, sr=sr, hop_length=hop_length)
+plt.figure(figsize=(15, 5))
+librosa.display.specshow(chromagram, x_axis='time', y_axis='chroma', hop_length=hop_length, cmap='coolwarm')
 
